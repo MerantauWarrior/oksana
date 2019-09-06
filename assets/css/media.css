@@ -97,6 +97,10 @@
     .title--counties{
         margin: 30px 0;
     }
+    .top-screen__row{
+        justify-content: center;
+        margin: 30px 0;
+    }
     .top-form{
         margin-top: 30px;
     }
@@ -172,8 +176,12 @@
 
     }
     .top-screen__row{
-        justify-content: center;
+        justify-content: space-between;
         margin: 30px 0;
+    }
+    .footer-block:nth-child(2),
+    .footer-block:nth-child(3){
+        width: 50%;
     }
     .contacts__title{
         margin-bottom: 10px;
