@@ -231,6 +231,21 @@ img{
     background: url("../img/top-form-email.png") no-repeat 18px center, #ffffff;
 }
 /*Navigation*/
+.m-nav{
+    display: none;
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: 15px;
+    padding: 15px;
+}
+.m-nav span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 6px 0;
+    background-color: #fff;
+}
 .navigation{
     display: flex;
     height: 80px;

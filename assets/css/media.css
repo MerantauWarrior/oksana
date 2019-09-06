@@ -1,0 +1,280 @@
+@media (min-width: 768px) and (max-width: 1024px){
+    .header{
+        padding-bottom: 310px;
+    }
+    .variants{
+        padding-bottom: 280px;
+    }
+    .contacts-map {
+        width: 50%;
+        flex-grow: 1;
+    }
+    .passport__text-block, .passport__img-block {
+        max-width: 45%;
+    }
+    .passport__img-block{
+        align-items: flex-end;
+    }
+    .insurance__block{
+        width: 585px;
+    }
+    .variants__items,
+    .counties__list{
+        justify-content: center;
+    }
+    .document-docs{
+        justify-content: center;
+    }
+    .document-docs__b{
+        margin: 15px;
+    }
+    .title{
+        text-align: center;
+    }
+    .reward:after{
+        left: -50px;
+    }
+    .reward:before{
+        right: -50px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    .visa-check__title{
+        width: 40%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .navigation__link{
+        margin-right: 15px;
+    }
+    .documents-needs{
+        margin: 0 auto;
+    }
+    .counties__list-item{
+        width: 50%;
+    }
+    .top-form__form-group{
+        margin-right: 0;
+    }
+    .inp-top-form{
+        height: 50px;
+        line-height: 50px;
+        margin: 5px;
+    }
+    .btn--top-form{
+        margin: 30px auto 0 auto;
+    }
+    .variants-item{
+        width: 50%;
+    }
+    .processing-item{
+        width: 33.33333333%;
+        margin-bottom: 30px;
+    }
+    .processing-item__circle{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .visa-check__title{
+        width: 100%;
+        text-align: center;
+    }
+    .visa-check__form{
+        margin-top: 30px;
+        margin-right: auto;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .m-nav{
+        display: block;
+    }
+    .header{
+        padding-bottom: 50px;
+    }
+    .navigation{
+        flex-wrap: wrap;
+    }
+    .title--counties{
+        margin: 30px 0;
+    }
+    .top-screen__row{
+        justify-content: center;
+        margin: 30px 0;
+    }
+    .top-form{
+        margin-top: 30px;
+    }
+    .top-screen__tel{
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    .top-screen__title{
+        font-size: 36px;
+    }
+    .variants{
+        padding: 30px 0 0 0;
+    }
+    .title--variants{
+        margin-bottom: 30px;
+    }
+    .title--documents{
+        margin-bottom: 30px;
+    }
+    .documents__top{
+        margin-bottom: 30px;
+    }
+    .insurance{
+        padding: 50px 0;
+    }
+    .label-insurance{
+        margin: 10px 0;
+    }
+    .passport__title{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .passport__img-block{
+        margin-top: 15px;
+    }
+    .visa-check{
+        padding: 50px 0;
+        background: url(../img/visa-check-bg.jpg) no-repeat center;
+    }
+    .rewards,
+    .processing{
+        padding: 30px 0;
+    }
+    .processing__title{
+        margin-bottom: 30px;
+    }
+    .contacts{
+        padding-bottom: 30px;
+    }
+    .footer{
+        padding: 30px 0;
+    }
+    .footer-description{
+        margin-top: 15px;
+    }
+    .documents{
+        padding-bottom: 15px;
+    }
+
+}
+@media (min-width: 320px) and (max-width: 767px) and (orientation: portrait){
+    .navigation{
+        display: none;
+        height: auto;
+    }
+    .navigation__link,
+    .navigation__select{
+        width: 100%;
+        margin-right: 0;
+        justify-content: center;
+        padding: 10px 0;
+        border-bottom:none;
+
+    }
+    .contacts__title{
+        margin-bottom: 10px;
+    }
+    .contacts-tabs__link{
+        margin-top: 10px;
+    }
+    .insurance__description{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .insurance-row{
+        margin-bottom: 0;
+    }
+    .documents-needs__sign{
+        margin-right: 5px;
+    }
+    .documents-item--big {
+        padding: 10px 15px 25px 15px;
+        margin-bottom: 15px;
+    }
+    .document-docs__b{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .counties__list-item{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .title,
+    .documents-needs__number,
+    .insurance__title,
+    .passport__title,
+    .processing__title{
+        font-size: 30px;
+        text-align: center;
+    }
+    .processing-items{
+        justify-content: center;
+    }
+    .top-form__form-group{
+        margin-right: 0;
+    }
+    .inp, .inp-top-form{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    .counties-country__flag{
+        width: 80px;
+        min-width: 80px;
+    }
+    .counties-country{
+        padding: 15px;
+    }
+    .documents-needs__number{
+        font-size: 40px;
+    }
+    .insurance-b-halh{
+        width: 100%;
+    }
+    .reward:after, .reward:before{
+        display: none;
+    }
+    .visa-check__title{
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+    .btn-red{
+        height: 40px;
+        line-height: 40px;
+        margin: 15px auto 0 auto;
+    }
+    .top-screen__description{
+        font-size: 18px;
+    }
+    .inp--visa-check{
+        width: 100%;
+    }
+    .insurance__block{
+        width: 100%;
+    }
+    .visa-check__form{
+        flex-wrap: wrap;
+    }
+    .rewards-item{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .footer-block{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .footer-info,
+    .footer-info--no-title{
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .footer-info__block:first-child{
+        margin-top: 0;
+    }
+}
