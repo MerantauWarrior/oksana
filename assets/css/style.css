@@ -574,6 +574,37 @@ img{
     color: #c73733;
     border-bottom: 1px solid #c73733;
 }
+.title--additionals{
+    margin: 85px 0 70px 0;
+}
+.documents-additionals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.documents-additional{
+    width: calc(100% / 6);
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    text-align: center;
+    font-size: 14px;
+}
+.documents-additional__title{
+    margin: 15px 0;
+    font-family:'Gotham Pro', sans-serif;
+    color: #222222;
+}
+.documents-additional__link{
+    margin-top: auto;
+    font-family:'Gotham Pro Bold', sans-serif;
+    color: #c73733;
+    border-bottom: 1px solid #c73733;
+}
 /*Insurance*/
 .insurance{
     padding: 350px 0 270px 0;

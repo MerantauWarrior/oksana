@@ -28,6 +28,10 @@
     .document-docs__b{
         margin: 15px;
     }
+    .documents-additional{
+        width: 33.3333333%;
+        margin-bottom: 30px;
+    }
     .title{
         text-align: center;
     }
@@ -114,14 +118,13 @@
     .variants{
         padding: 30px 0 0 0;
     }
-    .title--variants{
-        margin-bottom: 30px;
-    }
-    .title--documents{
-        margin-bottom: 30px;
-    }
+    .title--variants,
+    .title--documents,
     .documents__top{
         margin-bottom: 30px;
+    }
+    .title--additionals{
+        margin: 30px 0;
     }
     .insurance{
         padding: 50px 0;
@@ -134,6 +137,7 @@
         margin-bottom: 30px;
     }
     .passport__img-block{
+        align-items: center;
         margin-top: 15px;
     }
     .visa-check{
@@ -207,6 +211,10 @@
         width: 100%;
         margin-bottom: 15px;
     }
+    .documents-additional{
+        width: 50%;
+        margin-bottom: 30px;
+    }
     .counties__list-item{
         width: 100%;
         margin-bottom: 15px;
@@ -215,12 +223,10 @@
     .documents-needs__number,
     .insurance__title,
     .passport__title,
-    .processing__title{
+    .processing__title,
+    .title--additionals{
         font-size: 30px;
         text-align: center;
-    }
-    .processing-items{
-        justify-content: center;
     }
     .top-form__form-group{
         margin-right: 0;
@@ -284,5 +290,14 @@
     }
     .footer-info__block:first-child{
         margin-top: 0;
+    }
+}
+@media (min-width: 320px) and (max-width: 360px) and (orientation: portrait){
+    .processing-items{
+        justify-content: center;
+    }
+    .documents-additional{
+         width: 100%;
+         margin-bottom: 15px;
     }
 }
