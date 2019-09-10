@@ -89,6 +89,34 @@
     }
 }
 @media (min-width: 320px) and (max-width: 767px){
+    .modal-window{
+        padding: 15px;
+    }
+    .modal-window--small,
+    .modal-window--huge,
+    .modal-window--big{
+        max-width: 80%;
+    }
+    .modal-window-countries__block{
+        width: 100%;
+    }
+    .modal-window-countries__info,
+    .modal-window-countries__action{
+        margin-left: 0;
+        padding-left: 37px;
+    }
+    .modal-window__search{
+        margin-top: 10px;
+    }
+    .modal-window-list{
+        max-height: 400px;
+    }
+    .modal-window-list__block{
+        width: 50%;
+    }
+    .modal-window__title{
+        font-size: 26px;
+    }
     .m-nav{
         display: block;
     }
@@ -218,6 +246,14 @@
     .counties__list-item{
         width: 100%;
         margin-bottom: 15px;
+    }
+    .processing-item__circle{
+        width: 145px;
+        height: 145px;
+    }
+    .processing-item__circle:after {
+        width: 130px;
+        height: 130px;
     }
     .title,
     .documents-needs__number,
