@@ -1076,7 +1076,7 @@ img{
 }
 .modal-window--big{
     max-width: 945px;
-    height: 620px;
+    /*height: 620px;*/
     top: 5%;
     left: 50%;
     -webkit-transform: translate(-50%, -0%);
