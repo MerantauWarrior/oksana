@@ -4,6 +4,15 @@
     }
 }
 @media (min-width: 768px) and (max-width: 1024px){
+    .country-text-card{
+        padding: 15px;
+    }
+    .visa-check {
+        padding: 310px 0;
+    }
+    .country-documents{
+        padding-bottom: 45px;
+    }
     .modal-window{
         padding: 15px;
     }
