@@ -526,6 +526,7 @@ img{
     color: #666666;
 }
 .documents-needs__sign{
+    flex: 0 0 16px;
     width: 16px;
     height: 16px;
     margin-right: 15px;
@@ -1228,4 +1229,133 @@ img{
 .spam--6{
     top: -108px;
     left: 0;
+}
+/*Country*/
+.country-top-screen__title{
+    font-family:'Gotham Pro Bold';
+    font-size: 50px;
+    color: #ffffff;
+}
+.header--country-1{
+    background: url(../img/header-bg-country-1.jpg) no-repeat center top;
+}
+.country-text{
+    position: relative;
+    margin: 90px 0 60px 0;
+}
+.country-text__title{
+    margin-bottom: 35px;
+    font-family:'Gotham Pro Bold';
+    font-size: 40px;
+    color: #222222;
+}
+.country-text__small-title{
+    margin-bottom: 15px;
+    font-family:'Gotham Pro Bold';
+    font-size: 16px;
+    color: #222222;
+}
+.country-text__padding{
+    padding: 0 15px;
+}
+.country-text__paragraph{
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #222222;
+}
+.country-text__list-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+.country-text__list{
+    width: 50%;
+    padding: 0 15px;
+}
+.country-text__list-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #222222;
+}
+.country-text__endblock{
+    margin-bottom: 80px;
+}
+.country-text__cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.country-text__cards-item{
+    width: 33.33333333%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+.country-text-card{
+    height: 100%;
+    min-height: 140px;
+    padding: 30px;
+    -webkit-box-shadow:  0px 5px 20px rgba(31,76,105,0.05);
+    -moz-box-shadow:  0px 5px 20px rgba(31,76,105,0.05);
+    box-shadow:  0px 5px 20px rgba(31,76,105,0.05);
+}
+.country-text-card:after {
+    width: 140px;
+    height: 140px;
+}
+.country-text-card:before {
+    width: 100px;
+    height: 100px;
+}
+.country-text-card__main{
+    display: flex;
+}
+.country-text-card__name{
+    font-family:'Gotham Pro Bold';
+    font-size: 16px;
+    color: #222222;
+}
+.country-text-card__description{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #666666;
+}
+.country-text__cards-after{
+    padding: 0 15px;
+    font-family:'Gotham Pro Bold';
+    font-size: 16px;
+    color: #222222;
+}
+.visa-check__title{
+    width: 585px;
+}
+.btn--country-visa-check{
+    width: 180px;
+    margin-left: 15px;
+}
+.counrty-visa-check__inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 15px;
+}
+.country-visa-check__subtitle{
+    margin-top: 5px;
+    font-family:'Gotham Pro';
+    font-size: 16px;
+    color: #0d1d50;
+}
+.country-documents{
+    padding-bottom: 95px;
+}
+.country-seo{
+    padding-bottom: 80px;
+}
+.country-seo__inner{
+    padding: 0 15px;
+}
+.country-seo__paragragh{
+    margin: 0 0 10px 0;
+    font-size: 13px;
+    color: #222222;
 }

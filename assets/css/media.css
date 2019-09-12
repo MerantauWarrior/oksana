@@ -108,6 +108,23 @@
     }
 }
 @media (min-width: 320px) and (max-width: 767px){
+    .country-text{
+        margin: 45px 0;
+    }
+    .country-documents{
+        padding: 30px 0;
+    }
+    .country-seo{
+        padding-bottom: 45px;
+    }
+    .country-text__list-wrapper,
+    .country-text__endblock{
+        margin-bottom: 30px;
+    }
+    .country-top-screen__title,
+    .country-text__title{
+        font-size: 26px;
+    }
     .modal-window{
         padding: 15px;
     }
@@ -212,7 +229,18 @@
     }
 
 }
+@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
+    .country-text__cards-item{
+        width: 50%;
+    }
+}
 @media (min-width: 320px) and (max-width: 767px) and (orientation: portrait){
+    .country-text__cards-item{
+        width: 100%;
+    }
+    .country-text__list{
+        width: 100%;
+    }
     .navigation{
         display: none;
         height: auto;
