@@ -3,6 +3,7 @@ $( document ).ready(function() {
   //mobile navigation
   $('.m-nav').on('click', function () {
     $('.navigation').slideToggle();
+    $(this).toggleClass('m-nav_opened');
   });
   //contacts tabs
   $('.contacts-tabs__link').on('click', function (e) {

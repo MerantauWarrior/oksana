@@ -261,6 +261,28 @@ img{
     height: 2px;
     margin: 6px 0;
     background-color: #fff;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.m-nav_opened span:nth-child(1){
+    -webkit-transform: rotate(-45deg) translate(-6px,3px);
+    -moz-transform: rotate(-45deg) translate(-6px,3px);
+    -ms-transform: rotate(-45deg) translate(-6px,3px);
+    -o-transform: rotate(-45deg) translate(-6px,3px);
+    transform: rotate(-45deg) translate(-6px,3px);
+}
+.m-nav_opened span:nth-child(2){
+    display: none;
+}
+.m-nav_opened span:nth-child(3){
+    -webkit-transform: rotate(45deg) translate(-2px,0px);
+    -moz-transform: rotate(45deg) translate(-2px,0px);
+    -ms-transform: rotate(45deg) translate(-2px,0px);
+    -o-transform: rotate(45deg) translate(-2px,0px);
+    transform: rotate(45deg) translate(-2px,0px);
 }
 .navigation{
     display: flex;
