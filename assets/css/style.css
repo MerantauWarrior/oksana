@@ -1205,9 +1205,13 @@ img{
     width: 23px;
     opacity: 1;
 }
+.mCustomScrollBox{
+    width: 100%;
+}
 .mCSB_inside > .mCSB_container {
     display: flex;
     flex-wrap: wrap;
+    width: calc(100% - 23px);
     margin-right: 23px;
 }
 #mCSB_1_scrollbar_vertical .mCSB_dragger{
@@ -1251,6 +1255,20 @@ img{
 .spam--6{
     top: -108px;
     left: 0;
+}
+.modal-window-countries-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 25%;
+    margin-bottom: 10px;
+}
+.modal-window-countries-item a{
+    font-size: 14px;
+    color: #222222;
+}
+.modal-window-countries-item a:hover{
+    color: #c73733;
 }
 /*Country*/
 .country-top-screen__title{
