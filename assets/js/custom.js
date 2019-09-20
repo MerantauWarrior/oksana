@@ -31,7 +31,7 @@ $( document ).ready(function() {
   })
 
 });
-
+//Scrollbar
 (function($){
   $(window).on("load",function(){
     $(".modal-window-list, .modal-window-countries").mCustomScrollbar();

@@ -76,6 +76,9 @@ img{
     max-width: 1170px;
     margin: 0 auto;
 }
+.container__inner{
+    padding: 0 15px;
+}
 .inp,
 .txt{
     width: 100%;
@@ -1256,6 +1259,10 @@ img{
     top: -108px;
     left: 0;
 }
+.spam--7{
+    top: -108px;
+    left: 0;
+}
 .modal-window-countries-item{
     display: flex;
     flex-wrap: wrap;
@@ -1279,9 +1286,14 @@ img{
 .header--country-1{
     background: url(../img/header-bg-country-1.jpg) no-repeat center top;
 }
+.countries-variants{
+    position: relative;
+    padding-bottom: 585px;
+    background: url("../img/countries-variants-bg-inside.png") no-repeat center 150px;
+}
 .country-text{
     position: relative;
-    margin: 90px 0 60px 0;
+    margin-bottom: 60px;
 }
 .country-text__title{
     margin-bottom: 35px;
@@ -1386,15 +1398,54 @@ img{
     color: #0d1d50;
 }
 .country-documents{
-    padding-bottom: 95px;
+    padding-bottom: 90px;
 }
 .country-seo{
-    padding-bottom: 80px;
+    padding: 90px 0;
 }
 .country-seo__inner{
     padding: 0 15px;
 }
 .country-seo__paragragh{
+    margin: 0 0 10px 0;
+    font-size: 13px;
+    color: #222222;
+}
+/*About*/
+.header--country-germany{
+    background: url(../img/header-bg-country-germany.jpg) no-repeat center top;
+}
+.about{
+    position: relative;
+    padding-bottom: 90px;
+}
+.title--about{
+    padding: 0 15px;
+    margin-bottom: 65px;
+}
+.about__images{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+}
+.about-image{
+    width: 33.33333333%;
+    padding: 0 15px;
+}
+.about-image__box{
+    border: 1px solid #deeaf3;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 5px 20px rgba(31,76,105,0.05);
+    -moz-box-shadow: 0 5px 20px rgba(31,76,105,0.05);
+    box-shadow: 0 5px 20px rgba(31,76,105,0.05);
+    overflow: hidden;
+}
+.about__text{
+    margin-top: 30px;
+}
+.about__text p{
     margin: 0 0 10px 0;
     font-size: 13px;
     color: #222222;
