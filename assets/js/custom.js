@@ -5,6 +5,23 @@ $( document ).ready(function() {
     $('.navigation').slideToggle();
     $(this).toggleClass('m-nav_opened');
   });
+
+  $('.arrow--navigation').on('click',function () {
+    $('.navigation__select').toggleClass('navigation__select_opened');
+  });
+
+  //get-set variant text
+  $('.variants-item__link').on('click', function () {
+    var textVariants = $(this).parent().siblings('div.variants-item__head').text();
+    $('#mSix').find('input[type="hidden"]').val(textVariants);
+  });
+
+  //vShop btn
+  $('.modal-window-countries__link').on('click', function () {
+    var textVariant = $(this).parent().parent().find('div.modal-window-countries__name').text();
+    $('#mEight').find('input[type="hidden"]').val(textVariant);
+  });
+
   //contacts tabs
   $('.contacts-tabs__link').on('click', function (e) {
     e.preventDefault();
@@ -25,10 +42,41 @@ $( document ).ready(function() {
     $('.modal-window'+mName).show();
   });
   $('.modal-window__close').on('click', function () {
-    $('.modal').hide();
-    $('.modal-window').hide();
-    $('body').removeClass('body-ovh');
-  })
+    if($(this).hasClass('vShop-close')){
+      $('#mEight').hide();
+    }else{
+      $('.modal').hide();
+      $('.modal-window').hide();
+      $('body').removeClass('body-ovh');
+    }
+  });
+  //modal form submit
+  $("form").submit(function (event) {
+    event.preventDefault();
+    var $form = $(this);
+    var $inputs = $form.find("input, select, button, textarea");
+    var submit = $form.find("button");
+    var serializedData = $form.serialize();
+    console.log(serializedData);
+    $inputs.prop("disabled", true);
+    request = $.ajax({
+      url: "send.php",
+      type: "post",
+      data: serializedData
+    });
+    request.done(function (response, textStatus, jqXHR) {
+      $inputs.prop("disabled", false);
+      $form.find("input, textarea").val('');
+      $('body').addClass('body-ovh');
+      $('.modal').show();
+      $('.modal-window*').hide();
+      $('.modal-window#mThanks').show();
+    });
+    request.fail(function (jqXHR, textStatus, errorThrown) {
+      $inputs.prop("disabled", false);
+      alert('Ошибка отправки! Попробуйте отправить запрос еще раз!');
+    });
+  });
 
 });
 //Scrollbar

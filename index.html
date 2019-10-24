@@ -29,11 +29,17 @@
     <div class="navigation">
       <a href="#" class="navigation__link navigation__link_active">Главная</a>
       <a href="#mFive" class="navigation__link js-modal">Мазагазин виз</a>
-      <a href="#" class="navigation__link">Страны</a>
+      <a href="#mSeven" class="navigation__link js-modal">Страны</a>
       <a href="#" class="navigation__link">Доп. услуги</a>
       <a href="#" class="navigation__link">Франшиза</a>
       <a href="#" class="navigation__link">Контакты</a>
-      <a href="#mFour" class="navigation__select js-modal">Выбор филлиала <span class="arrow--navigation"></span></a>
+      <div class="navigation__select">
+        ВЦ Белорусская
+        <span class="arrow--navigation"></span>
+        <div class="navigation__select-dd">
+          <a href="http://xn-----7kcbgadwojnn4bija1agn1a9oh.xn--80adxhks/" class="navigation__select-dd-link">ВЦ Красные ворота</a>
+        </div>
+      </div>
     </div>
     <div class="top-screen">
       <div class="top-screen__row">
@@ -43,12 +49,15 @@
         <a href="tel:+7 495 229 13 37" class="top-screen__tel">+7 495 229 13 37</a>
       </div>
       <div class="top-screen__title"><span>Визовый</span> центр</div>
-      <div class="top-screen__description">получить консультацию гражданам РФ и СНГ для тех, кто не хочет думать о визе</div>
+      <div class="top-screen__description">получить консультацию гражданам РФ и
+        СНГ для тех, кто не хочет думать о
+        визе</div>
       <form method="get" class="top-form">
         <div class="top-form__form-group">
-          <input type="text" name="tName" id="tName" class="inp-top-form inp-top-form--name" placeholder="Ваше имя">
-          <input type="tel" name="tTel" id="tTel" class="inp-top-form inp-top-form--tel" placeholder="+7">
-          <input type="email" name="tMail" id="tMail" class="inp-top-form inp-top-form--email" placeholder="E-mail">
+          <input type="hidden" name="formName" value="получить консультацию">
+          <input type="text" name="userName" id="tName" class="inp-top-form inp-top-form--name" placeholder="Ваше имя">
+          <input type="tel" name="userTel" id="tTel" class="inp-top-form inp-top-form--tel" placeholder="+7">
+          <input type="email" name="userEmail" id="tMail" class="inp-top-form inp-top-form--email" placeholder="E-mail">
         </div>
         <button class="btn-red btn--top-form" type="submit">Получить визу</button>
       </form>
@@ -261,7 +270,7 @@
             <div class="variants-item__head">
               <div class="variants-item__text-one">Базовый</div>
               <div class="variants-item__text-two">Почти все есть</div>
-              <div class="variants-item__text-three">1 900 руб / 3 часа</div>
+              <div class="variants-item__text-three">1 920 руб / 3 часа</div>
             </div>
             <div class="variants-item__list">
               <div class="variants-item__list-item">
@@ -299,7 +308,7 @@
             <div class="variants-item__head">
               <div class="variants-item__text-one">Базовый</div>
               <div class="variants-item__text-two">Почти все есть</div>
-              <div class="variants-item__text-three">1 900 руб / 3 часа</div>
+              <div class="variants-item__text-three">1 904 руб / 3 часа</div>
             </div>
             <div class="variants-item__list">
               <div class="variants-item__list-item">
@@ -651,10 +660,11 @@
         <form method="get" class="insurance__form">
           <div class="insurance-row">
             <div class="insurance-b-halh">
-              <input type="text" name="insuranceName" id="insuranceName" class="inp" placeholder="Ваше имя">
+              <input type="hidden" name="formName" value="Получить страховку">
+              <input type="text" name="userName" id="insuranceName" class="inp" placeholder="Ваше имя">
             </div>
             <div class="insurance-b-halh">
-              <input type="tel" name="insuranceTel" id="insuranceTel" class="inp" placeholder="+7">
+              <input type="tel" name="userTel" id="insuranceTel" class="inp" placeholder="+7">
             </div>
           </div>
           <div class="insurance-row">
@@ -667,7 +677,7 @@
           </div>
           <div class="insurance-row">
             <div class="insurance-b-full">
-              <textarea name="insuranceComment" id="insuranceComment" class="txt" placeholder="Комментарий"></textarea>
+              <textarea name="userComment" id="insuranceComment" class="txt" placeholder="Комментарий"></textarea>
             </div>
           </div>
           <div class="insurance-row">
@@ -715,6 +725,7 @@
     <div class="visa-check__inner">
       <div class="visa-check__title">Проверить готовность визы</div>
       <form method="get" class="visa-check__form">
+        <input type="hidden" name="formName" value="Проверить готовность визы">
         <input type="text" name="visaCheck" id="visaCheck" class="inp inp--visa-check" placeholder="Номер договора">
         <button class="btn-red btn--visa-check" type="submit">Получить визу</button>
       </form>
@@ -991,13 +1002,14 @@
     </div>
     <form method="get">
       <div class="modal-row">
-        <input type="text" name="m1Name" id="m1Name" class="inp" placeholder="Ваше имя">
+        <input type="hidden" name="formName" value="записаться на прием">
+        <input type="text" name="userName" id="m1Name" class="inp" placeholder="Ваше имя">
       </div>
       <div class="modal-row">
-        <input type="email" name="m1Mail" id="m1Mail" class="inp" placeholder="Электронная Почта">
+        <input type="email" name="userEmail" id="m1Mail" class="inp" placeholder="Электронная Почта">
       </div>
       <div class="modal-row">
-        <input type="tel" name="m1Tel" id="m1Tel" class="inp" placeholder="+7">
+        <input type="tel" name="userTel" id="m1Tel" class="inp" placeholder="+7">
       </div>
       <div class="modal-row">
         <input type="checkbox" name="m1Policy" id="m1Policy" class="checkbox-insurance" checked>
@@ -1017,13 +1029,14 @@
     </div>
     <form method="get">
       <div class="modal-row">
-        <input type="text" name="m2Name" id="m2Name" class="inp" placeholder="Ваше имя">
+        <input type="hidden" name="formName" value="вызвать курьера">
+        <input type="text" name="userName" id="m2Name" class="inp" placeholder="Ваше имя">
       </div>
       <div class="modal-row">
-        <input type="email" name="m2Mail" id="m2Mail" class="inp" placeholder="Электронная Почта">
+        <input type="email" name="userEmail" id="m2Mail" class="inp" placeholder="Электронная Почта">
       </div>
       <div class="modal-row">
-        <input type="tel" name="m2Tel" id="m2Tel" class="inp" placeholder="+7">
+        <input type="tel" name="userTel" id="m2Tel" class="inp" placeholder="+7">
       </div>
       <div class="modal-row">
         <input type="checkbox" name="m1Policy" id="m2Policy" class="checkbox-insurance" checked>
@@ -1043,17 +1056,18 @@
     </div>
     <form method="get">
       <div class="modal-row">
-        <input type="text" name="m3Name" id="m3Name" class="inp" placeholder="Ваше имя">
+        <input type="hidden" name="formName" value="только документы">
+        <input type="text" name="userName" id="m3Name" class="inp" placeholder="Ваше имя">
       </div>
       <div class="modal-row">
-        <input type="email" name="m3Mail" id="m3Mail" class="inp" placeholder="Электронная Почта">
+        <input type="email" name="userEmail" id="m3Mail" class="inp" placeholder="Электронная Почта">
       </div>
       <div class="modal-row">
-        <input type="tel" name="m3Tel" id="m3Tel" class="inp" placeholder="+7">
+        <input type="tel" name="userTel" id="m3Tel" class="inp" placeholder="+7">
       </div>
       <div class="modal-row">
         <div class="inp-select-wrapper">
-          <select name="m3Choice" id="m3Choice" class="inp">
+          <select name="userSelect" id="m3Choice" class="inp">
             <option value="0" selected>Выберите офис</option>
             <option value="1">ВЦ Белорусская</option>
             <option value="2">ВЦ Красные Ворота</option>
@@ -1647,7 +1661,7 @@
           <div class="modal-window-countries__name">Австралия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1655,7 +1669,7 @@
           <div class="modal-window-countries__name">Австрия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1663,7 +1677,7 @@
           <div class="modal-window-countries__name">Бельгия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1671,7 +1685,7 @@
           <div class="modal-window-countries__name">Болгария</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1679,7 +1693,7 @@
           <div class="modal-window-countries__name">Великобритания</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1687,7 +1701,7 @@
           <div class="modal-window-countries__name">Венгрия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1695,7 +1709,7 @@
           <div class="modal-window-countries__name">Вьетнам</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1703,7 +1717,7 @@
           <div class="modal-window-countries__name">Германия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1711,7 +1725,7 @@
           <div class="modal-window-countries__name">Греция</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1719,7 +1733,7 @@
           <div class="modal-window-countries__name">Дания</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1727,7 +1741,7 @@
           <div class="modal-window-countries__name">Индия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1735,7 +1749,7 @@
           <div class="modal-window-countries__name">Ирландия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1743,7 +1757,7 @@
           <div class="modal-window-countries__name">Исландия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1751,7 +1765,7 @@
           <div class="modal-window-countries__name">Испания</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
       </div>
@@ -1761,7 +1775,7 @@
           <div class="modal-window-countries__name">Австралия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1769,7 +1783,7 @@
           <div class="modal-window-countries__name">Австрия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1777,7 +1791,7 @@
           <div class="modal-window-countries__name">Бельгия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1785,7 +1799,7 @@
           <div class="modal-window-countries__name">Болгария</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1793,7 +1807,7 @@
           <div class="modal-window-countries__name">Великобритания</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1801,7 +1815,7 @@
           <div class="modal-window-countries__name">Венгрия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1809,7 +1823,7 @@
           <div class="modal-window-countries__name">Вьетнам</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1817,7 +1831,7 @@
           <div class="modal-window-countries__name">Германия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1825,7 +1839,7 @@
           <div class="modal-window-countries__name">Греция</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1833,7 +1847,7 @@
           <div class="modal-window-countries__name">Дания</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1841,7 +1855,7 @@
           <div class="modal-window-countries__name">Индия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1849,7 +1863,7 @@
           <div class="modal-window-countries__name">Ирландия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1857,7 +1871,7 @@
           <div class="modal-window-countries__name">Исландия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1865,7 +1879,7 @@
           <div class="modal-window-countries__name">Испания</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
       </div>
@@ -1875,7 +1889,7 @@
           <div class="modal-window-countries__name">Австралия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1883,7 +1897,7 @@
           <div class="modal-window-countries__name">Австрия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1891,7 +1905,7 @@
           <div class="modal-window-countries__name">Бельгия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1899,7 +1913,7 @@
           <div class="modal-window-countries__name">Болгария</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1907,7 +1921,7 @@
           <div class="modal-window-countries__name">Великобритания</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1915,7 +1929,7 @@
           <div class="modal-window-countries__name">Венгрия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1923,7 +1937,7 @@
           <div class="modal-window-countries__name">Вьетнам</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1931,7 +1945,7 @@
           <div class="modal-window-countries__name">Германия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1939,7 +1953,7 @@
           <div class="modal-window-countries__name">Греция</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1947,7 +1961,7 @@
           <div class="modal-window-countries__name">Дания</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1955,7 +1969,7 @@
           <div class="modal-window-countries__name">Индия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1963,7 +1977,7 @@
           <div class="modal-window-countries__name">Ирландия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1971,7 +1985,7 @@
           <div class="modal-window-countries__name">Исландия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1979,7 +1993,7 @@
           <div class="modal-window-countries__name">Испания</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
       </div>
@@ -1989,7 +2003,7 @@
           <div class="modal-window-countries__name">Австралия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -1997,7 +2011,7 @@
           <div class="modal-window-countries__name">Австрия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -2005,7 +2019,7 @@
           <div class="modal-window-countries__name">Бельгия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -2013,7 +2027,7 @@
           <div class="modal-window-countries__name">Болгария</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -2021,7 +2035,7 @@
           <div class="modal-window-countries__name">Великобритания</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -2029,7 +2043,7 @@
           <div class="modal-window-countries__name">Венгрия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -2037,7 +2051,7 @@
           <div class="modal-window-countries__name">Вьетнам</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -2045,7 +2059,7 @@
           <div class="modal-window-countries__name">Германия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -2053,7 +2067,7 @@
           <div class="modal-window-countries__name">Греция</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -2061,7 +2075,7 @@
           <div class="modal-window-countries__name">Дания</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -2069,7 +2083,7 @@
           <div class="modal-window-countries__name">Индия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -2077,7 +2091,7 @@
           <div class="modal-window-countries__name">Ирландия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -2085,7 +2099,7 @@
           <div class="modal-window-countries__name">Исландия</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
         <div class="modal-window-countries__item">
@@ -2093,7 +2107,7 @@
           <div class="modal-window-countries__name">Испания</div>
           <div class="modal-window-countries__info">от 6 700 р., от 5-30 дн</div>
           <div class="modal-window-countries__action">
-            <a href="#" class="modal-window-countries__link">Заказать</a>
+            <a href="#mEight" class="modal-window-countries__link js-modal">Заказать</a>
           </div>
         </div>
       </div>
@@ -2275,17 +2289,18 @@
     </div>
     <form method="get">
       <div class="modal-row">
-        <input type="text" name="m6Name" id="m6Name" class="inp" placeholder="Ваше имя">
+        <input type="hidden" name="formName" value="записаться на прием">
+        <input type="text" name="userName" id="m6Name" class="inp" placeholder="Ваше имя">
       </div>
       <div class="modal-row">
-        <input type="email" name="m6Mail" id="m6Mail" class="inp" placeholder="Электронная Почта">
+        <input type="email" name="userEmail" id="m6Mail" class="inp" placeholder="Электронная Почта">
       </div>
       <div class="modal-row">
-        <input type="tel" name="m6Tel" id="m6Tel" class="inp" placeholder="+7">
+        <input type="tel" name="userTel" id="m6Tel" class="inp" placeholder="+7">
       </div>
       <div class="modal-row">
         <div class="inp-select-wrapper">
-          <select name="m6Choice" id="m6Choice" class="inp">
+          <select name="userSelect" id="m6Choice" class="inp">
             <option value="0" selected>Выберите офис</option>
             <option value="1">ВЦ Белорусская</option>
             <option value="2">ВЦ Красные Ворота</option>
@@ -2300,6 +2315,50 @@
         <button class="btn-red" type="submit">Отправить</button>
       </div>
     </form>
+  </div>
+
+  <div class="modal-window modal-window--small" id="mEight">
+    <div class="modal-window__close vShop-close"></div>
+    <div class="modal-window-small__header">
+      <div class="modal-window__title">Оставьте заявку</div>
+      <div class="modal-window__subtitle">чтобы заказать визу</div>
+    </div>
+    <form method="get">
+      <div class="modal-row">
+        <input type="hidden" name="formName" value="order visa">
+        <input type="text" name="userName" id="m8Name" class="inp" placeholder="Ваше имя">
+      </div>
+      <div class="modal-row">
+        <input type="email" name="userEmail" id="m8Mail" class="inp" placeholder="Электронная Почта">
+      </div>
+      <div class="modal-row">
+        <input type="tel" name="userTel" id="m8Tel" class="inp" placeholder="+7">
+      </div>
+      <div class="modal-row">
+        <div class="inp-select-wrapper">
+          <select name="userSelect" id="m8Choice" class="inp">
+            <option value="0" selected>Выберите офис</option>
+            <option value="ВЦ Белорусская">ВЦ Белорусская</option>
+            <option value="ВЦ Красные Ворота">ВЦ Красные Ворота</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-row">
+        <input type="checkbox" name="m1Policy" id="m8Policy" class="checkbox-insurance" checked required>
+        <label for="m6Policy" class="label-insurance">Условия использования и Политика конфидециальности</label>
+      </div>
+      <div class="modal-row">
+        <button class="btn-red" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="modal-window modal-window--small" id="mThanks">
+    <div class="modal-window__close"></div>
+    <div class="modal-window-small__header">
+      <div class="modal-window__title">Спасибо за заявку</div>
+      <div class="modal-window__subtitle">мы вам перезвоним в течении 5 минут</div>
+    </div>
   </div>
 
 </div>

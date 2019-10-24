@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-  <title>Germany</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Contacts</title>
   <meta name="keywords" content="text, test">
   <meta name="description" content="very long text description">
   <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css">
@@ -19,7 +19,7 @@
 </head>
 <body>
 
-<section class="header header--country-germany">
+<section class="header">
   <div class="spam spam--1"><img src="assets/img/spam-1.png" alt=""></div>
   <div class="spam spam--2"><img src="assets/img/spam-2.png" alt=""></div>
   <div class="container">
@@ -29,11 +29,17 @@
     <div class="navigation">
       <a href="#" class="navigation__link navigation__link_active">Главная</a>
       <a href="#mFive" class="navigation__link js-modal">Мазагазин виз</a>
-      <a href="#" class="navigation__link">Страны</a>
+      <a href="#mSeven" class="navigation__link js-modal">Страны</a>
       <a href="#" class="navigation__link">Доп. услуги</a>
       <a href="#" class="navigation__link">Франшиза</a>
       <a href="#" class="navigation__link">Контакты</a>
-      <a href="#mFour" class="navigation__select js-modal">Выбор филлиала <span class="arrow--navigation"></span></a>
+      <div class="navigation__select">
+        ВЦ Белорусская
+        <span class="arrow--navigation"></span>
+        <div class="navigation__select-dd">
+          <a href="http://xn-----7kcbgadwojnn4bija1agn1a9oh.xn--80adxhks/" class="navigation__select-dd-link">ВЦ Красные ворота</a>
+        </div>
+      </div>
     </div>
     <div class="top-screen">
       <div class="top-screen__row">
@@ -42,13 +48,76 @@
         </a>
         <a href="tel:+7 495 229 13 37" class="top-screen__tel">+7 495 229 13 37</a>
       </div>
-      <div class="country-top-screen__title">Визовый центр получить консультацию<br>Для граждан РФ и СНГ</div>
-      <div class="top-screen__description">Для тех кто не хочет думать о визе</div>
+      <div class="top-screen__title"><span>Загранпаспорт</span></div>
+      <div class="top-screen__description">Просто выберите нужные опции и узнайте стоимость
+        и сроки оформления.
+      </div>
       <form method="get" class="top-form">
         <div class="top-form__form-group">
-          <input type="text" name="tName" id="tName" class="inp-top-form inp-top-form--name" placeholder="Ваше имя">
-          <input type="tel" name="tTel" id="tTel" class="inp-top-form inp-top-form--tel" placeholder="+7">
-          <input type="email" name="tMail" id="tMail" class="inp-top-form inp-top-form--email" placeholder="E-mail">
+          <input type="hidden" name="formName" value="получить консультацию">
+          <input type="text" name="userName" id="tName" class="inp-top-form inp-top-form--name" placeholder="Ваше имя">
+          <input type="tel" name="userTel" id="tTel" class="inp-top-form inp-top-form--tel" placeholder="+7">
+          <input type="email" name="userEmail" id="tMail" class="inp-top-form inp-top-form--email" placeholder="E-mail">
+        </div>
+        <button class="btn-red btn--wide-form" type="submit">Узнать сроки и цены</button>
+      </form>
+      <!--<form method="get" class="top-form">-->
+        <!--<div class="top-form__form-group">-->
+          <!--<input type="hidden" name="formName" value="Загранпаспорт стоимость и сроки оформления.">-->
+          <!--<select name="userPropiska" id="userPropiska" class="select-top-form">-->
+            <!--<option value="0">Прописка</option>-->
+            <!--<option value="1">qwe</option>-->
+            <!--<option value="2">123</option>-->
+          <!--</select>-->
+          <!--<select name="userAge" id="userAge" class="select-top-form">-->
+            <!--<option value="0">Возраст</option>-->
+            <!--<option value="1">12</option>-->
+            <!--<option value="2">13</option>-->
+          <!--</select>-->
+          <!--<select name="userPassType" id="userPassType" class="select-top-form">-->
+            <!--<option value="0">Тип паспорта</option>-->
+            <!--<option value="1">паспорта</option>-->
+            <!--<option value="2">паспорта</option>-->
+          <!--</select>-->
+        <!--</div>-->
+        <!--<button class="btn-red btn&#45;&#45;wide-form" type="submit">Узнать сроки и цены</button>-->
+      <!--</form>-->
+    </div>
+  </div>
+</section>
+
+<section class="contacts-requisites">
+  <div class="container">
+    <div class="title title--contacts">Реквизиты г. Москва</div>
+    <div class="contacts-text__items">
+      <div class="contacts-text__item">
+        <div class="contacts-small-text">ООО "ВЦ ВизаБери"</div>
+        <div class="contacts-small-text">Юридический (он же почтовый):</div>
+        <div class="contacts-small-text">123056 г. Москва, Грузинский Вал, д. 11, стр. 4, офис 11, этаж – 2.</div>
+        <div class="contacts-small-text">ИНН: 7703475667</div>
+        <div class="contacts-small-text">КПП: 770301001</div>
+      </div>
+      <div class="contacts-text__item">
+        <div class="contacts-small-text">ОГРН: 1197746315150</div>
+        <div class="contacts-small-text">Р/С: 40702810446000000019</div>
+        <div class="contacts-small-text">Название банка: Московский филиал АО «ИК Банк»</div>
+        <div class="contacts-small-text">БИК: 044525086</div>
+        <div class="contacts-small-text">К/С: 30101810745250000086</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacts-order">
+  <div class="container">
+    <div class="contacts-order__inner">
+      <div class="visa-check__title visa-check__title--contacts">Заказать счет на безналичную оплату</div>
+      <form method="get" class="contacts-order__rorm">
+        <div class="top-form__form-group">
+          <input type="hidden" name="formName" value="Заказать счет на безналичную оплату">
+          <input type="text" name="userName" id="oName" class="inp-top-form inp-top-form--name" placeholder="Ваше имя">
+          <input type="tel" name="userTel" id="oTel" class="inp-top-form inp-top-form--tel" placeholder="+7">
+          <input type="email" name="userEmail" id="oMail" class="inp-top-form inp-top-form--email" placeholder="E-mail">
         </div>
         <button class="btn-red btn--top-form" type="submit">Получить визу</button>
       </form>
@@ -56,492 +125,152 @@
   </div>
 </section>
 
-<section class="countries-variants">
-  <div class="spam spam--6"><img src="assets/img/spam-3.png" alt=""></div>
+<section class="contacts-pay">
   <div class="container">
-    <div class="title title--variants">Варианты подачи</div>
-    <div class="variants__items">
-      <div class="variants-item">
-        <div class="variants-item__box">
-          <div class="variants-item__head">
-            <div class="variants-item__text-one">Базовый</div>
-            <div class="variants-item__text-two">Почти все есть</div>
-            <div class="variants-item__text-three">1 900 руб / 3 часа</div>
-          </div>
-          <div class="variants-item__list">
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Проконсультируем
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Проверим документы
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Сделаем всенеобходимые копии
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Запишем на подачу и сдачу биометрии
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Предоставим подтверждение
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              перелета в обе стороны
-            </div>
-          </div>
-          <div class="variants-item__btn">
-            <a href="#mSix" class="btn-red variants-item__link js-modal">Хочу этот тариф</a>
-          </div>
+    <div class="title title--contacts-pay">Перевести</div>
+    <form method="get" class="contacts-pay-form">
+      <input type="hidden" name="formName" value="Перевести">
+      <div class="contacts-pay-card">
+        <div class="contacts-pay-card__row">
+          <label for="userCard" class="label-contacts-pay-card">Номер карты</label>
+          <input type="text" name="userCard" id="userCard" class="inp-contacts-pay-card">
+        </div>
+        <div class="contacts-pay-card__row-half">
+          <label for="userMY" class="label-contacts-pay-card">ММ/ГГ</label>
+          <input type="text" name="userMY" id="userMY" class="inp-contacts-pay-card">
+        </div>
+        <div class="contacts-pay-card__row-half">
+          <label for="userCVC" class="label-contacts-pay-card">CVC</label>
+          <input type="text" name="userCVC" id="userCVC" class="inp-contacts-pay-card">
+        </div>
+        <div class="contacts-pay-card__row">
+          <img src="assets/img/contacts/contacts-pay.png" alt="visa mir maestro">
         </div>
       </div>
-      <div class="variants-item">
-        <div class="variants-item__box">
-          <div class="variants-item__head">
-            <div class="variants-item__text-one">Базовый</div>
-            <div class="variants-item__text-two">Почти все есть</div>
-            <div class="variants-item__text-three">1 900 руб / 3 часа</div>
-          </div>
-          <div class="variants-item__list">
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Проконсультируем
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Проверим документы
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Сделаем всенеобходимые копии
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Запишем на подачу и сдачу биометрии
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Предоставим подтверждение
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              перелета в обе стороны
-            </div>
-          </div>
-          <div class="variants-item__btn">
-            <a href="#mSix" class="btn-red variants-item__link js-modal">Хочу этот тариф</a>
-          </div>
+      <div class="contacts-pay-info">
+        <div class="contacts-pay-info__row-half">
+          <label for="userSum" class="label-contacts-pay-info">Сумма</label>
+          <input type="text" name="userSum" id="userSum" class="inp-contacts-pay-info"
+                 placeholder="от 1 000 до 75 000 р.">
+        </div>
+        <div class="contacts-pay-info__row-half">
+          <label for="userEmail" class="label-contacts-pay-info">Ваша почта</label>
+          <input type="text" name="userEmail" id="userEmail" class="inp-contacts-pay-info" placeholder="для квитанции">
+        </div>
+        <div class="contacts-pay-info__row">
+          <label for="userComment" class="label-contacts-pay-info">Ваш комментарий</label>
+          <textarea name="userComment" id="userComment" maxlength="150" class="textarea-contacts-pay-info"
+                    placeholder="до 150 символов"></textarea>
         </div>
       </div>
-      <div class="variants-item">
-        <div class="variants-item__box">
-          <div class="variants-item__head">
-            <div class="variants-item__text-one">Базовый</div>
-            <div class="variants-item__text-two">Почти все есть</div>
-            <div class="variants-item__text-three">1 900 руб / 3 часа</div>
-          </div>
-          <div class="variants-item__list">
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Проконсультируем
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Проверим документы
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Сделаем всенеобходимые копии
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Запишем на подачу и сдачу биометрии
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Предоставим подтверждение
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              перелета в обе стороны
-            </div>
-          </div>
-          <div class="variants-item__btn">
-            <a href="#mSix" class="btn-red variants-item__link js-modal">Хочу этот тариф</a>
-          </div>
+      <div class="contacts-pay-info__submit">
+        <div class="contacts-pay-info__submit-text">
+          Страница предназначена только для пополнения счета. Она не подходит для оплаты товаров и услуг, потому что
+          опротестовать платеж нельзя, даже если товар окажется некачественным.
         </div>
+        <button class="btn-red btn--top-form" type="submit">Перевести</button>
       </div>
-      <div class="variants-item">
-        <div class="variants-item__box">
-          <div class="variants-item__head">
-            <div class="variants-item__text-one">Базовый</div>
-            <div class="variants-item__text-two">Почти все есть</div>
-            <div class="variants-item__text-three">1 900 руб / 3 часа</div>
-          </div>
-          <div class="variants-item__list">
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Проконсультируем
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Проверим документы
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Сделаем всенеобходимые копии
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Запишем на подачу и сдачу биометрии
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Предоставим подтверждение
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              перелета в обе стороны
-            </div>
-          </div>
-          <div class="variants-item__btn">
-            <a href="#mSix" class="btn-red variants-item__link js-modal">Хочу этот тариф</a>
-          </div>
-        </div>
+    </form>
+  </div>
+</section>
+
+<section class="contacts-offices">
+  <div class="container">
+    <div class="title title--contacts-offices">Наши офисы</div>
+    <div class="contacts-text__items">
+      <div class="contacts-text__item">
+        <div class="contacts-small-text">123056 г. Москва, Грузинский Вал, д. 11, стр. 4, офис 11, этаж – 2.</div>
+        <div class="contacts-small-text">+7 (495) 229-11-63 многокональный</div>
+        <div class="contacts-small-text">+7 (985) 765-13-30 WhatsApp info@visaberi.ru</div>
+        <div class="contacts-small-text">График работы:</div>
+        <div class="contacts-small-text">Пон- Пт 09.00-20.00</div>
+        <div class="contacts-small-text">Сб. 12:00-18:00</div>
+        <div class="contacts-small-text">Вс. По записи</div>
+        <div class="contacts-small-text">БЕСПЛАТНАЯ ПАРКОВКА ДЛЯ НАШИХ ГОСТЕЙ НА 1 ЧАС!</div>
       </div>
-      <div class="variants-item">
-        <div class="variants-item__box">
-          <div class="variants-item__head">
-            <div class="variants-item__text-one">Базовый</div>
-            <div class="variants-item__text-two">Почти все есть</div>
-            <div class="variants-item__text-three">1 900 руб / 3 часа</div>
-          </div>
-          <div class="variants-item__list">
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Проконсультируем
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Проверим документы
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Сделаем всенеобходимые копии
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Запишем на подачу и сдачу биометрии
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Предоставим подтверждение
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              перелета в обе стороны
-            </div>
-          </div>
-          <div class="variants-item__btn">
-            <a href="#mSix" class="btn-red variants-item__link js-modal">Хочу этот тариф</a>
-          </div>
-        </div>
-      </div>
-      <div class="variants-item">
-        <div class="variants-item__box">
-          <div class="variants-item__head">
-            <div class="variants-item__text-one">Базовый</div>
-            <div class="variants-item__text-two">Почти все есть</div>
-            <div class="variants-item__text-three">1 900 руб / 3 часа</div>
-          </div>
-          <div class="variants-item__list">
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Проконсультируем
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Проверим документы
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Сделаем всенеобходимые копии
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Запишем на подачу и сдачу биометрии
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              Предоставим подтверждение
-            </div>
-            <div class="variants-item__list-item">
-              <div class="variants-item__list-sign"></div>
-              перелета в обе стороны
-            </div>
-          </div>
-          <div class="variants-item__btn">
-            <a href="#mSix" class="btn-red variants-item__link js-modal">Хочу этот тариф</a>
-          </div>
-        </div>
+      <div class="contacts-text__item">
+        <div class="contacts-small-text">г. Москва, улица Мясницкий проезд, дом 4, стр. 1, этаж 3, офис 1</div>
+        <div class="contacts-small-text">8 (495) 229-11-63 kv@visaberi.ru</div>
+        <div class="contacts-small-text">Гафик работы:</div>
+        <div class="contacts-small-text">Пон- Пт 09.00-20.00</div>
+        <div class="contacts-small-text">Сб. 12:00-18:00</div>
+        <div class="contacts-small-text">Вс. По записи</div>
+        <div class="contacts-small-text">ГОРОДСКАЯ ПАРКОВКА, ВСЕГДА ЕСТЬ МЕСТА!</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="country-text">
-  <div class="spam spam--5"><img src="assets/img/spam-5.png" alt=""></div>
+<section class="contacts">
+  <div class="spam spam--6"><img src="assets/img/spam-6.png" alt=""></div>
   <div class="container">
-    <div class="country-text__padding">
-      <div class="country-text__title">Визовый центр Гермнии в Москве</div>
-      <div class="country-text__paragraph">На нашем сайте представлена вся информация относительно цели поездки и
-        необходимых документов для получения шенгенской визы в Германию через наше аккредитованное агентство, шенгенская
-        виза в Германию оформляется без вашего личного присутствия.
+    <div class="contacts__inner">
+      <div class="contacts-map">
+        <img src="assets/img/map.jpg" alt="map" style="display: block;">
       </div>
-      <div class="country-text__small-title">В зависимости от цели визита, вам нужно выбрать тип соответствующей визы
-      </div>
-    </div>
-    <div class="country-text__list-wrapper">
-      <ul class="country-text__list">
-        <li class="country-text__list-item">
-          <div class="documents-needs__sign"></div>
-          Для туризма (краткосрочная, мультивиза)
-        </li>
-        <li class="country-text__list-item">
-          <div class="documents-needs__sign"></div>
-          Гостевая, для посещения друзей или родственников
-        </li>
-        <li class="country-text__list-item">
-          <div class="documents-needs__sign"></div>
-          Деловая, для бизнес поездок
-        </li>
-        <li class="country-text__list-item">
-          <div class="documents-needs__sign"></div>
-          Транзитная виз
-        </li>
-      </ul>
-      <ul class="country-text__list">
-        <li class="country-text__list-item">
-          <div class="documents-needs__sign"></div>
-          Национальная виза в Германию
-        </li>
-        <li class="country-text__list-item">
-          <div class="documents-needs__sign"></div>
-          Для учебы в ВУЗе, посещения школ
-        </li>
-        <li class="country-text__list-item">
-          <div class="documents-needs__sign"></div>
-          Для осуществления трудовой деятельности
-        </li>
-        <li class="country-text__list-item">
-          <div class="documents-needs__sign"></div>
-          Для лечения, в клиниках Германии
-        </li>
-      </ul>
-    </div>
-    <div class="country-text__padding">
-      <div class="country-text__title">Туристическая виза в Германию, оформление, документы</div>
-      <div class="country-text__paragraph">Германия – интереснейшая страна, достойная того, чтобы в ней побывать. Но для
-        посещения этого европейского государства нужна шенгенская виза. Для этого подойдет разрешительная санкция любой
-        страны, входящей в зону Шенгена. Но самым практичным будет решение открыть визу в Германию.
-      </div>
-      <div class="country-text__small-title">Сроки оформления визы в Германию</div>
-      <div class="country-text__paragraph">• Оформление занимает в среднем от 3 до 7 рабочих дней с момента подачи
-        заявления.
-      </div>
-      <div class="country-text__paragraph">• Срочная виза в Германию оформляется за 3 рабочих дня.</div>
-      <div class="country-text__small-title">Получение визы без присутствия через наш визовый сервис</div>
-      <div class="country-text__paragraph">1. Экономические гарантии — справка с работы (должность, оклад)</div>
-      <div class="country-text__paragraph">2. Финансовые гарантии — справка об остатке на счете в банке (минимум 720
-        евро)
-      </div>
-      <div class="country-text__paragraph">3. Фотография — 2 шт. цветные на белом фоне 3,5 х 4,5 см. (можно сделать у
-        нас)
-      </div>
-      <div class="country-text__small-title">Стоимость оформления без участия заявителя — 4300 руб.</div>
-      <div class="country-text__small-title">Документы на визу в Германию, через наш визовый сервис</div>
-      <div class="country-text__paragraph">1. Заграничный паспорт, оригинал</div>
-      <div class="country-text__paragraph">2. Российский паспорт, копия. (можно сделать у нас)</div>
-      <div class="country-text__paragraph">3. Копия 1 стр. с персональными данными и подписью заявителя</div>
-      <div class="country-text__paragraph">4. Оригинал + копии страниц общегражданского паспорта(можно сделать у нас)</div>
-      <div class="country-text__paragraph">5. 2 цветные фотографии на матовой бумаге размером 3,5х4,5 см (можно сделать у нас)</div>
-      <div class="country-text__paragraph">6. Справка с места работы, должность + оклад, на фирменном бланке организации (если работаете)</div>
-      <div class="country-text__paragraph">o Копия пенсионного удостоверения, справка из учебного заведения, справка об инвалидности</div>
-      <div class="country-text__paragraph">7. Справка о состоянии счёта в банке, с печатью банка и подписью сотрудника отделения</div>
-      <div class="country-text__paragraph">o Минимальный остаток на счете 720 евро на поездку, до 21 дня пребывания</div>
-      <div class="country-text__paragraph">8. Опросник. (можно заполнить у нас)</div>
-      <div class="country-text__paragraph">*Все справки на момент подачи документов, не должны быть старше 1 мес.</div>
-    </div>
-  </div>
-</section>
-
-<section class="visa-check">
-  <div class="container">
-    <div class="counrty-visa-check__inner">
-      <div class="visa-check__title">Срочно нужен загранпаспорт?
-        <div class="country-visa-check__subtitle">Опытные специалисты проконсультируют по всем возникшим
-          вопросам, а также помогут с оформлением необходимых документов.
-        </div>
-      </div>
-      <form method="get" class="visa-check__form">
-        <input type="tel" name="visaCheck" id="visaCheck" class="inp inp--visa-check" placeholder="+7">
-        <button class="btn-red btn--country-visa-check" type="submit">Перезвоните мне</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<section class="country-documents">
-  <div class="container">
-    <div class="documents__inner">
-      <div class="title title--documents">Передача документов</div>
-      <div class="document-docs">
-        <div class="document-docs__b">
-          <div class="documents-item documents-item--small">
-            <div class="document-docs__img">
-              <img src="assets/img/documents-1.png" alt="doc-1">
+      <div class="contacts-info">
+        <div class="contacts-info__inner">
+          <div class="contacts__title">Контакты</div>
+          <div class="contacts-tabs">
+            <div class="contacts-tabs__control">
+              <a href="#contactOne" class="contacts-tabs__link contacts-tabs__link_active">ВЦ Белорусская</a>
+              <a href="#contactTwo" class="contacts-tabs__link">ВЦ Красные ворота</a>
             </div>
-            <div class="document-docs__text">
-              <div class="document-docs__name">Лично<br> в офисе</div>
-              <a href="#mOne" class="document-docs__link js-modal">Записаться на прием</a>
+            <div class="contacts-tabs__content contacts-tabs__content_active" id="contactOne">
+              <div class="contacts-tabs__content-block">
+                129090, г. Москва,<br>
+                ул. Грузинский Вал 11, стр 4, Офис 11
+              </div>
+              <div class="contacts-tabs__content-block">
+                Время работы<br>
+                Пн-Пт: 9:00-20:00<br>
+                Сб: 12:00-16:00<br>
+                Вс: 12:00-16:00
+              </div>
+              <div class="contacts-tabs__content-block">
+                Почта:<br>
+                info@visaberi.ru
+              </div>
+              <div class="contacts-tabs__content-block">
+                Мы в социальных сетях:
+                <div class="contacts-info-socials">
+                  <a href="#" class="contacts-info-socials__link"><img src="assets/img/c-vk.png" alt="vk"></a>
+                  <a href="#" class="contacts-info-socials__link"><img src="assets/img/c-insta.png" alt="insta"></a>
+                  <a href="#" class="contacts-info-socials__link"><img src="assets/img/c-twitter.png" alt="twitter"></a>
+                  <a href="#" class="contacts-info-socials__link"><img src="assets/img/c-fb.png" alt="fb"></a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="document-docs__b">
-          <div class="documents-item documents-item--small">
-            <div class="document-docs__img">
-              <img src="assets/img/documents-2.png" alt="doc-1">
-            </div>
-            <div class="document-docs__text">
-              <div class="document-docs__name">Курьером</div>
-              <a href="#mTwo" class="document-docs__link js-modal">Вызвать курьера</a>
-            </div>
-          </div>
-        </div>
-        <div class="document-docs__b">
-          <div class="documents-item documents-item--small">
-            <div class="document-docs__img">
-              <img src="assets/img/documents-3.png" alt="doc-1">
-            </div>
-            <div class="document-docs__text">
-              <div class="document-docs__name">В Whatsapp</div>
-            </div>
-          </div>
-        </div>
-        <div class="document-docs__b">
-          <div class="documents-item documents-item--small">
-            <div class="document-docs__img">
-              <img src="assets/img/documents-4.png" alt="doc-1">
-            </div>
-            <div class="document-docs__text">
-              <div class="document-docs__name">DHL/CDEK</div>
+            <div class="contacts-tabs__content" id="contactTwo">
+              <div class="contacts-tabs__content-block">
+                129090, г. Москва,<br>
+                Мясницкий проезд, дом 4 офис 1.<br>
+                этаж - 3.<br>
+                парковка городская, всегда есть места!
+              </div>
+              <div class="contacts-tabs__content-block">
+                Время работы<br>
+                Пн-Пт: 9:00-20:00<br>
+                Сб: 12:00-18:00<br>
+                Вс: по записи
+              </div>
+              <div class="contacts-tabs__content-block">
+                Почта:<br>
+                info@visaberi.ru
+              </div>
+              <div class="contacts-tabs__content-block">
+                Мы в социальных сетях:
+                <div class="contacts-info-socials">
+                  <a href="#" class="contacts-info-socials__link"><img src="assets/img/c-vk.png" alt="vk"></a>
+                  <a href="#" class="contacts-info-socials__link"><img src="assets/img/c-insta.png" alt="insta"></a>
+                  <a href="#" class="contacts-info-socials__link"><img src="assets/img/c-twitter.png" alt="twitter"></a>
+                  <a href="#" class="contacts-info-socials__link"><img src="assets/img/c-fb.png" alt="fb"></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="counties">
-  <div class="container">
-    <div class="title title--counties">Страны</div>
-    <div class="counties__list">
-      <div class="counties__list-item">
-        <div class="counties-country">
-          <div class="counties-country__flag">
-            <img src="assets/img/countries/IT.svg" alt="Italy">
-          </div>
-          <div class="counties-country__text">
-            <div class="counties-country__name">Италия</div>
-            <a href="#" class="counties-country__link-more">подробнее</a>
-            <a href="#mSix" class="counties-country__link-get js-modal"><span></span><span>Получить визу</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="counties__list-item">
-        <div class="counties-country">
-          <div class="counties-country__flag">
-            <img src="assets/img/countries/FR.svg" alt="Italy">
-          </div>
-          <div class="counties-country__text">
-            <div class="counties-country__name">Франция</div>
-            <a href="#" class="counties-country__link-more">подробнее</a>
-            <a href="#mSix" class="counties-country__link-get js-modal"><span></span><span>Получить визу</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="counties__list-item">
-        <div class="counties-country">
-          <div class="counties-country__flag">
-            <img src="assets/img/countries/ES.svg" alt="Italy">
-          </div>
-          <div class="counties-country__text">
-            <div class="counties-country__name">Испания</div>
-            <a href="#" class="counties-country__link-more">подробнее</a>
-            <a href="#mSix" class="counties-country__link-get js-modal"><span></span><span>Получить визу</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="counties__list-item">
-        <div class="counties-country">
-          <div class="counties-country__flag">
-            <img src="assets/img/countries/DE.svg" alt="Italy">
-          </div>
-          <div class="counties-country__text">
-            <div class="counties-country__name">Германия</div>
-            <a href="#" class="counties-country__link-more">подробнее</a>
-            <a href="#mSix" class="counties-country__link-get js-modal"><span></span><span>Получить визу</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="counties__list-item">
-        <div class="counties-country">
-          <div class="counties-country__flag">
-            <img src="assets/img/countries/BG.svg" alt="Italy">
-          </div>
-          <div class="counties-country__text">
-            <div class="counties-country__name">Болгария</div>
-            <a href="#" class="counties-country__link-more">подробнее</a>
-            <a href="#mSix" class="counties-country__link-get js-modal"><span></span><span>Получить визу</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="counties__list-item">
-        <div class="counties-country">
-          <div class="counties-country__flag">
-            <img src="assets/img/countries/GR.svg" alt="Italy">
-          </div>
-          <div class="counties-country__text">
-            <div class="counties-country__name">Греция</div>
-            <a href="#" class="counties-country__link-more">подробнее</a>
-            <a href="#mSix" class="counties-country__link-get js-modal"><span></span><span>Получить визу</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a href="#mSeven" class="counties__more btn-red js-modal"><span class="spinner-btn"></span>Показать еще</a>
-  </div>
-</section>
-
-<section class="country-seo">
-  <div class="container">
-    <div class="country-seo__inner">
-      <p class="country-seo__paragragh">Франция – это страна в Западной Европе, на территории которой находятся
-        средневековые города, альпийские деревни и пляжи Средиземного моря. Париж, столица государства, славится своими
-        домами моды, старейшими художественными музеями, в числе которых Лувр, и достопримечательностями, такими как
-        Эйфелева башня. Франция известна своими винами и изысканной кухней. Наскальная живопись в пещере Ласко,
-        амфитеатр Трех Галлий в Лионе и огромный Версальский дворец свидетельствуют о богатой истории этих мест.</p>
-      <p class="country-seo__paragragh">Франция – это страна в Западной Европе, на территории которой находятся
-        средневековые города, альпийские деревни
-        и пляжи Средиземного моря. Париж, столица государства, славится своими домами моды, старейшими художественными
-        музеями, в числе которых Лувр, и достопримечательностями, такими как Эйфелева башня. Франция известна своими
-        винами и изысканной кухней. Наскальная живопись в пещере Ласко, амфитеатр Трех Галлий в Лионе и огромный
-        Версальский дворец свидетельствуют о богатой истории этих мест.</p>
     </div>
   </div>
 </section>
@@ -674,10 +403,14 @@
     </div>
     <form method="get">
       <div class="modal-row">
-        <input type="text" name="m1Name" id="m1Name" class="inp" placeholder="Ваше имя">
+        <input type="hidden" name="formName" value="записаться на прием">
+        <input type="text" name="userName" id="m1Name" class="inp" placeholder="Ваше имя">
       </div>
       <div class="modal-row">
-        <input type="tel" name="m1Tel" id="m1Tel" class="inp" placeholder="+7">
+        <input type="email" name="userEmail" id="m1Mail" class="inp" placeholder="Электронная Почта">
+      </div>
+      <div class="modal-row">
+        <input type="tel" name="userTel" id="m1Tel" class="inp" placeholder="+7">
       </div>
       <div class="modal-row">
         <input type="checkbox" name="m1Policy" id="m1Policy" class="checkbox-insurance" checked>
@@ -697,10 +430,14 @@
     </div>
     <form method="get">
       <div class="modal-row">
-        <input type="text" name="m2Name" id="m2Name" class="inp" placeholder="Ваше имя">
+        <input type="hidden" name="formName" value="вызвать курьера">
+        <input type="text" name="userName" id="m2Name" class="inp" placeholder="Ваше имя">
       </div>
       <div class="modal-row">
-        <input type="tel" name="m2Tel" id="m2Tel" class="inp" placeholder="+7">
+        <input type="email" name="userEmail" id="m2Mail" class="inp" placeholder="Электронная Почта">
+      </div>
+      <div class="modal-row">
+        <input type="tel" name="userTel" id="m2Tel" class="inp" placeholder="+7">
       </div>
       <div class="modal-row">
         <input type="checkbox" name="m1Policy" id="m2Policy" class="checkbox-insurance" checked>
@@ -720,14 +457,18 @@
     </div>
     <form method="get">
       <div class="modal-row">
-        <input type="text" name="m3Name" id="m3Name" class="inp" placeholder="Ваше имя">
+        <input type="hidden" name="formName" value="только документы">
+        <input type="text" name="userName" id="m3Name" class="inp" placeholder="Ваше имя">
       </div>
       <div class="modal-row">
-        <input type="tel" name="m3Tel" id="m3Tel" class="inp" placeholder="+7">
+        <input type="email" name="userEmail" id="m3Mail" class="inp" placeholder="Электронная Почта">
+      </div>
+      <div class="modal-row">
+        <input type="tel" name="userTel" id="m3Tel" class="inp" placeholder="+7">
       </div>
       <div class="modal-row">
         <div class="inp-select-wrapper">
-          <select name="m3Choice" id="m3Choice" class="inp">
+          <select name="userSelect" id="m3Choice" class="inp">
             <option value="0" selected>Выберите офис</option>
             <option value="1">ВЦ Белорусская</option>
             <option value="2">ВЦ Красные Ворота</option>
@@ -1774,41 +1515,6 @@
     </div>
   </div>
 
-  <div class="modal-window modal-window--small" id="mSix">
-    <div class="modal-window__close"></div>
-    <div class="modal-window-small__header">
-      <div class="modal-window__title">Оставьте заявку</div>
-      <div class="modal-window__subtitle">чтобы записаться на прием</div>
-    </div>
-    <form method="get">
-      <div class="modal-row">
-        <input type="text" name="m6Name" id="m6Name" class="inp" placeholder="Ваше имя">
-      </div>
-      <div class="modal-row">
-        <input type="email" name="m6Mail" id="m6Mail" class="inp" placeholder="Электронная Почта">
-      </div>
-      <div class="modal-row">
-        <input type="tel" name="m6Tel" id="m6Tel" class="inp" placeholder="+7">
-      </div>
-      <div class="modal-row">
-        <div class="inp-select-wrapper">
-          <select name="m6Choice" id="m6Choice" class="inp">
-            <option value="0" selected>Выберите офис</option>
-            <option value="1">ВЦ Белорусская</option>
-            <option value="2">ВЦ Красные Ворота</option>
-          </select>
-        </div>
-      </div>
-      <div class="modal-row">
-        <input type="checkbox" name="m1Policy" id="m6Policy" class="checkbox-insurance" checked required>
-        <label for="m6Policy" class="label-insurance">Условия использования и Политика конфидециальности</label>
-      </div>
-      <div class="modal-row">
-        <button class="btn-red" type="submit">Отправить</button>
-      </div>
-    </form>
-  </div>
-
   <div class="modal-window modal-window--huge" id="mSeven">
     <div class="modal-window__close"></div>
     <div class="modal-window__top">
@@ -1973,6 +1679,86 @@
         <div class="modal-window-countries__flag"><img src="assets/img/countries/VN.svg" alt="country"></div>
         <a href="france.html" class="modal-window-countries__name">Вьетнам</a>
       </div>
+    </div>
+  </div>
+
+  <div class="modal-window modal-window--small" id="mSix">
+    <div class="modal-window__close"></div>
+    <div class="modal-window-small__header">
+      <div class="modal-window__title">Оставьте заявку</div>
+      <div class="modal-window__subtitle">чтобы записаться на прием</div>
+    </div>
+    <form method="get">
+      <div class="modal-row">
+        <input type="hidden" name="formName" value="записаться на прием">
+        <input type="text" name="userName" id="m6Name" class="inp" placeholder="Ваше имя">
+      </div>
+      <div class="modal-row">
+        <input type="email" name="userEmail" id="m6Mail" class="inp" placeholder="Электронная Почта">
+      </div>
+      <div class="modal-row">
+        <input type="tel" name="userTel" id="m6Tel" class="inp" placeholder="+7">
+      </div>
+      <div class="modal-row">
+        <div class="inp-select-wrapper">
+          <select name="userSelect" id="m6Choice" class="inp">
+            <option value="0" selected>Выберите офис</option>
+            <option value="1">ВЦ Белорусская</option>
+            <option value="2">ВЦ Красные Ворота</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-row">
+        <input type="checkbox" name="m1Policy" id="m6Policy" class="checkbox-insurance" checked required>
+        <label for="m6Policy" class="label-insurance">Условия использования и Политика конфидециальности</label>
+      </div>
+      <div class="modal-row">
+        <button class="btn-red" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="modal-window modal-window--small" id="mEight">
+    <div class="modal-window__close vShop-close"></div>
+    <div class="modal-window-small__header">
+      <div class="modal-window__title">Оставьте заявку</div>
+      <div class="modal-window__subtitle">чтобы заказать визу</div>
+    </div>
+    <form method="get">
+      <div class="modal-row">
+        <input type="hidden" name="formName" value="order visa">
+        <input type="text" name="userName" id="m8Name" class="inp" placeholder="Ваше имя">
+      </div>
+      <div class="modal-row">
+        <input type="email" name="userEmail" id="m8Mail" class="inp" placeholder="Электронная Почта">
+      </div>
+      <div class="modal-row">
+        <input type="tel" name="userTel" id="m8Tel" class="inp" placeholder="+7">
+      </div>
+      <div class="modal-row">
+        <div class="inp-select-wrapper">
+          <select name="userSelect" id="m8Choice" class="inp">
+            <option value="0" selected>Выберите офис</option>
+            <option value="ВЦ Белорусская">ВЦ Белорусская</option>
+            <option value="ВЦ Красные Ворота">ВЦ Красные Ворота</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-row">
+        <input type="checkbox" name="m1Policy" id="m8Policy" class="checkbox-insurance" checked required>
+        <label for="m6Policy" class="label-insurance">Условия использования и Политика конфидециальности</label>
+      </div>
+      <div class="modal-row">
+        <button class="btn-red" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="modal-window modal-window--small" id="mThanks">
+    <div class="modal-window__close"></div>
+    <div class="modal-window-small__header">
+      <div class="modal-window__title">Спасибо за заявку</div>
+      <div class="modal-window__subtitle">мы вам перезвоним в течении 5 минут</div>
     </div>
   </div>
 
