@@ -10,6 +10,11 @@ $( document ).ready(function() {
     $('.navigation__select').toggleClass('navigation__select_opened');
   });
 
+  //passport table order
+  $('.passport-t__link').on('click', function () {
+    var textVariants = $(this).data('text');
+    $('#mSix').find('input[type="hidden"]').val(textVariants);
+  });
   //get-set variant text
   $('.variants-item__link').on('click', function () {
     var textVariants = $(this).parent().siblings('div.variants-item__head').text();

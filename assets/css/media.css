@@ -352,7 +352,140 @@
     .request--corporative{
         padding: 50px 0;
     }
-
+    /*Invitation*/
+    .invitation-text,
+    .invitation-types,
+    .invitation-benefits{
+        padding: 30px 0;
+    }
+    .request--invitation{
+        padding: 50px 0;
+    }
+    .invitation-types__items{
+        align-items: flex-start;
+    }
+    .invitation-types-item{
+        width: 50%;
+        margin-bottom: 15px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .invitation-types-item__text{
+        margin-top: 10px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .invitation-benefits-item .documents-item{
+        padding: 15px;
+    }
+    /*Passport*/
+    .passport-f__inner{
+        flex-wrap: wrap;
+    }
+    .passport-o__half{
+        width: 100%;
+    }
+    .passport-o__cta-text{
+        max-width: 100%;
+    }
+    .passport-o-docs{
+        margin-top: 30px;
+    }
+    .passport-o,
+    .passport-d{
+        padding: 30px 0;
+    }
+    .title--passport-o,
+    .title--passport-d{
+        margin-bottom: 0;
+    }
+    .passport-f__form{
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .passport-f{
+        padding: 50px 0;
+    }
+    .passport-d-item{
+        width: 100%;
+    }
+    .passport-d-s{
+        margin-top: 30px;
+    }
+    .passport-t{
+        padding: 30px 0;
+    }
+    .passport-t-table{
+        margin-bottom: 60px;
+    }
+    .title--passport-t{
+        margin-bottom: 30px;
+    }
+    .passport-t-table__row{
+        flex-direction: column;
+        height: auto;
+    }
+    .passport-t-table__td{
+        flex: 1 0 100%;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .passport-t-table__td:first-child{
+        text-align: center;
+    }
+    /*franchise*/
+    .franchise-benefits,
+    .franchise-recieve,
+    .franchise-additional,
+    .franchise-earn{
+        padding-top: 30px;
+    }
+    .franchise-benefits-item,
+    .franchise-additional-item{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .franchise-recieve-b-25,
+    .franchise-recieve-b-33{
+        width: 100%;
+    }
+    .franchise-presentation,
+    .franchise-questions{
+        padding: 50px 0;
+    }
+    .franchise-presentation{
+        background-position: center center;
+    }
+    .franchise-presentation__form-field{
+        flex: 1 0 100%;
+    }
+    .franchise-earn-item{
+        width: 100%;
+        flex-direction: column;
+    }
+    .franchise-earn-item__text{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .select-franchise-questions{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    .franchise-look{
+        padding: 30px 0;
+    }
+    .franchise-look-item{
+        flex-wrap: wrap;
+    }
+    .franchise-look-item__text{
+        border-right:none;
+        padding: 15px;
+    }
+    .title--franchise-look{
+        margin-top: 30px;
+    }
 }
 @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
     .country-text__cards-item{
@@ -518,6 +651,11 @@
     }
     .footer-info__block:first-child{
         margin-top: 0;
+    }
+    /*Passpost*/
+    .passport-f__title{
+        text-align: left;
+        margin-bottom: 10px;
     }
 }
 @media (min-width: 320px) and (max-width: 360px) and (orientation: portrait){
