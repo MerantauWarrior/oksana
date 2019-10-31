@@ -16,6 +16,7 @@
   <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="assets/js/jquery.maskedinput.min.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
 </head>
 <body>
 
@@ -37,7 +38,8 @@
         ВЦ Белорусская
         <span class="arrow--navigation"></span>
         <div class="navigation__select-dd">
-          <a href="http://xn-----7kcbgadwojnn4bija1agn1a9oh.xn--80adxhks/" class="navigation__select-dd-link">ВЦ Красные ворота</a>
+          <a href="http://xn-----7kcbgadwojnn4bija1agn1a9oh.xn--80adxhks/" class="navigation__select-dd-link">ВЦ Красные
+            ворота</a>
         </div>
       </div>
     </div>
@@ -51,7 +53,8 @@
       <div class="top-screen__title"><span>Визовый</span> центр</div>
       <div class="top-screen__description">получить консультацию гражданам РФ и
         СНГ для тех, кто не хочет думать о
-        визе</div>
+        визе
+      </div>
       <form method="get" class="top-form">
         <div class="top-form__form-group">
           <input type="hidden" name="formName" value="получить консультацию">
@@ -683,7 +686,8 @@
           <div class="insurance-row">
             <div class="insurance-b-halh">
               <input type="checkbox" name="insuranceTerms" id="insuranceTerms" class="checkbox-insurance" checked>
-              <label for="insuranceTerms" class="label-insurance">Условия использования и Политика конфидециальности</label>
+              <label for="insuranceTerms" class="label-insurance">Условия использования и Политика
+                конфидециальности</label>
             </div>
             <div class="insurance-b-halh">
               <button class="btn-red" type="submit">Получить страховку</button>
@@ -804,8 +808,8 @@
   <div class="spam spam--6"><img src="assets/img/spam-6.png" alt=""></div>
   <div class="container">
     <div class="contacts__inner">
-      <div class="contacts-map">
-        <img src="assets/img/map.jpg" alt="map" style="display: block;">
+      <div class="contacts-map" id="mapC">
+        <!--<img src="assets/img/map.jpg" alt="map" style="display: block;">-->
       </div>
       <div class="contacts-info">
         <div class="contacts-info__inner">
@@ -2363,5 +2367,76 @@
 
 </div>
 
+<script>
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('mapC', {
+        center: [55.768343848604516,37.603842087544926],
+        zoom: 13
+      }, {
+        searchControlProvider: 'yandex#search'
+      }),
+
+      myPlacemark = new ymaps.Placemark([55.76842556897946,37.647090999999996], {
+        hintContent: 'г. Москва, Мясницкий проезд, дом 4 офис 1.',
+        balloonContent: 'г. Москва, Мясницкий проезд, дом 4 офис 1.'
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#imageWithContent',
+        // Своё изображение иконки метки.
+        iconImageHref: 'assets/img/marker.svg',
+        // Размеры метки.
+        iconImageSize: [48, 48],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-24, -24],
+        // Смещение слоя с содержимым относительно слоя с картинкой.
+        iconContentOffset: [15, 15],
+        // Макет содержимого.
+        iconContentLayout: MyIconContentLayout
+      }),
+
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      ),
+      myPlacemarkWithContent = new ymaps.Placemark([55.773960068963845,37.57791149999998], {
+        hintContent: 'г. Москва, ул. Грузинский Вал 11, стр 4, Офис 11',
+        balloonContent: 'г. Москва, ул. Грузинский Вал 11, стр 4, Офис 11'
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#imageWithContent',
+        // Своё изображение иконки метки.
+        iconImageHref: 'assets/img/marker.svg',
+        // Размеры метки.
+        iconImageSize: [48, 48],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-24, -24],
+        // Смещение слоя с содержимым относительно слоя с картинкой.
+        iconContentOffset: [15, 15],
+        // Макет содержимого.
+        iconContentLayout: MyIconContentLayout
+      });
+
+    document.getElementsByClassName('contacts-tabs__link')[0].addEventListener('click', function (e) {
+      e.preventDefault();
+      myMap.geoObjects.remove(myPlacemark);
+      myMap.setCenter([55.773960068963845,37.57791149999998], 17, {
+        checkZoomRange: true
+      });
+      myMap.geoObjects.add(myPlacemarkWithContent);
+    });
+    document.getElementsByClassName('contacts-tabs__link')[1].addEventListener('click', function (e) {
+      e.preventDefault();
+      myMap.geoObjects.remove(myPlacemarkWithContent);
+      myMap.setCenter([55.76842556897946,37.647090999999996], 17, {
+        checkZoomRange: true
+      });
+      myMap.geoObjects.add(myPlacemark);
+    });
+    myMap.geoObjects.add(myPlacemarkWithContent);
+  });
+</script>
 </body>
 </html>

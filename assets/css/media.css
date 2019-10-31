@@ -85,6 +85,75 @@
     .select-top-form:last-child{
         margin-right: 15px;
     }
+    .services-item{
+        width: 33.33333%;
+    }
+    .inp-top-form{
+        height: 50px;
+        line-height: 50px;
+        margin: 5px;
+    }
+    .btn--top-form,
+    .btn--wide-form{
+        margin: 30px auto 0 auto;
+    }
+    .processing-item{
+        width: 33.33333333%;
+        margin-bottom: 30px;
+    }
+    .processing-item__circle{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about,
+    .agency-text,
+    .passport-t{
+        padding-top: 30px;
+    }
+    .corporative-letters-item__text{
+        padding-right: 15px;
+    }
+    .invitation-types-item{
+        flex-wrap: nowrap;
+    }
+    .franchise-benefits-item,
+    .franchise-recieve-b-25,
+    .franchise-additional-item{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .franchise-earn-item__text{
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .btn--franchise-presentation{
+        margin-right: 15px;
+    }
+    .passport-f__title{
+        text-align: left;
+    }
+    .passport-f__form{
+        margin-top: 30px;
+    }
+    .passport-o__cta-text{
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    .passport-t-table__row{
+        height: auto;
+        padding: 10px;
+    }
+    .passport-t-table__td:not(:first-child){
+        flex: 1 0 15%;
+        width: 15%;
+    }
+    .select-top-form{
+        height: 50px;
+        line-height: 50px;
+        margin: 5px;
+    }
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
     .visa-check__title{
@@ -114,24 +183,8 @@
     .top-form__form-group{
         margin-right: 0;
     }
-    .inp-top-form{
-        height: 50px;
-        line-height: 50px;
-        margin: 5px;
-    }
-    .btn--top-form{
-        margin: 30px auto 0 auto;
-    }
     .variants-item{
         width: 50%;
-    }
-    .processing-item{
-        width: 33.33333333%;
-        margin-bottom: 30px;
-    }
-    .processing-item__circle{
-        margin-left: auto;
-        margin-right: auto;
     }
     .visa-check__title{
         width: 100%;
@@ -140,6 +193,16 @@
     .visa-check__form{
         margin-top: 30px;
         margin-right: auto;
+    }
+    .invitation-types-item{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    .request-form__inp{
+        min-width: 33.33333%;
+    }
+    .passport-f__inner{
+        flex-wrap: wrap;
     }
 }
 @media (min-width: 320px) and (max-width: 767px){
